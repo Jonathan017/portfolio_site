@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan // web developer</title>
+<!--CSS Styles -->
+    <link rel="stylesheet" href="styles.css" />
+        <!-- Favicons , for creating a name logo-->
+        <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/icons/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/icons/favicon-32x32.png"
+      />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>JONATHAN IDOKO O.</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+    <!-- Hero Section -->
+
+    <section class="hero" id="about">
+        <img
+          src="pics/My_pics.jpg"
+          alt="My_pics"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            I create web applications/programs and mobile apps. Making improvements to existing 
+            software through coding and markup writing.
+            Translate designs from software developers and engineers into workable code.
+          </p>
+        </div>
+  </section>
+
+    <!-- More about -->
+
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+          I build code that allows a database and an application to communicate with one another. 
+          Taking care of them and maintaining the back-end of a website, Including databases, servers, and apps, which are core responsibility
+        </p>
+        <p>
+          I write, modify, test code and scripts that allow computer software and applications to function properly.
+          My objective of designing sites, mobile app is to ensure that, the users will have easily access to open up the site, 
+          see the information in a format that is easy to read and relevant.
+        </p>
+        <p>
+          I translate the designs from clients into usuable and live softwares with embeded instructions that an electronic machine can follow.
+        </p>
+      </section>
+    <!-- Skills section -->
+
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="/skills_logo/html5.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="skills_logo/css3.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="skills_logo/javascript1.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="skills_logo/boostrap.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="skills_logo/react.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="skills_logo/git.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+        </div>
+      </section>
+    
+      <!-- Projects section -->
+      <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="projects/Digital_clock.jpg"
+              alt="Digital_clock"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Digital_Clock</h3>
+            <p class="project-details"> 
+              A digital clock is a type of clock that displays the time digitally.
+             <p> A clock in which the hours , minutes , and the seconds are indicated by digits using javascript</p>
+            </p>
+            <a href="projects/Digital_clock.jpg" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="projects/expense-tracker.png"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Expense_Tracker</h3>
+            <p class="project-details">
+             it's an App, that allows you to monitor and categorize your expenses.
+             <p>Also showing the history of your items and account balaces</p>
+            </p>
+            <a href="projects/expense-tracker.png" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="projects/Reg_Form.jpg"
+              alt="Digital_clock"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Registration_Form</h3>
+            <p class="project-details">
+              A online Reg. form using Javascript.
+            </p>
+            <a href="projects/Reg_Form.jpg" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- Contact section -->
+
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xwkyagew" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Social accounts - Fixed to the right -->
+
+    <div class="socials">
+        <a href="https://www.facebook.com/jonathannidoko/" target="_blank"
+          ><img
+            src="socials/facebook.png"
+            alt="facebook"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.instagram.com/idoko_jonathan" target="_blank"
+          ><img
+            src="socials/instagram.jpg"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.linkedin.com/in/jonathan-idoko-8b8333185/" target="_blank"
+          ><img
+            src="socials/Lindin.png"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/Jonathan017" target="_blank"
+          ><img src="socials/github.png" alt="Github" class="socicon"
+        /></a>
+        <a href="https://twitter.com/jonathan_idoko" target="_blank"
+          ><img
+            src="socials/twitter.png"
+            alt="twitter"
+            loading="lazy"
+            class="socicon"
+        /></a>
+      </div>
+
+ <!-- Scroll to top -->
+ <i class="scroll-up" id="scroll-up"
+ ><img
+   src="shapes/scroll_up.png"
+   class="socicon up-arrow"
+   alt=""
+/></i>
+
+
+<!-- Footer section -->
+<footer>
+ <p class="copy">&copy; Copyright 2022</p>
+ <p class="copy">
+   Built with &#x2661; by
+   <a href="#" target="_blank"
+     >Jonathan</a
+   >
+ </p>
+</footer>
+
+    <!-- Website scripts -->
+    <script src="script.js"> </script>
+
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
